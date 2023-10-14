@@ -26,7 +26,7 @@ price_table AS (
 	LEFT JOIN czechia_price_category cpc 
 		ON cp.category_code = cpc.code 
 	WHERE cp.region_code  IS NULL 
-	GROUP BY name, _value, price_unit, year(cp.date_from)
+	GROUP BY name, _value, price_unit, price_year
 ),
 czech_gdp_table AS (
 	SELECT
