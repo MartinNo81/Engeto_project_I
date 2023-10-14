@@ -1,10 +1,11 @@
 CREATE OR REPLACE TABLE t_martin_novak_project_SQL_secondary_final AS
+
 SELECT
 	c.country ,
 	c.capital_city ,
 	e.population ,
 	e.`year` ,
-	e.GDP 
+	round(e.GDP,0) AS GDP 
 FROM countries c
 LEFT JOIN economies e 
 	ON lower(c.country) = lower(e.country)  
