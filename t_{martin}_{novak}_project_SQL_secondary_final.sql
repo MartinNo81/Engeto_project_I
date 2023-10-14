@@ -12,4 +12,4 @@ WHERE
 	lower(c.continent) = 'europe' 
 	AND e.`year` >= 2006
 	AND e.`year` <= 2018
-	AND lower(c.country) NOT LIKE 'czech%';
+	AND lower(c.country) NOT LIKE 'czech%' ;
