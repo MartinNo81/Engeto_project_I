@@ -26,8 +26,4 @@ SELECT
 FROM t_year_0 t0
 INNER JOIN t_year_1 t1
 	ON year_0 = year_1
-ORDER BY period 
-
-
-
-
+ORDER BY period;
