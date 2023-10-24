@@ -25,8 +25,8 @@ SELECT
 	industry_1,
 	CASE 
 		WHEN salary_1 - salary_0 BETWEEN 0 AND 100 THEN 'less then 0100'
-		WHEN salary_1 - salary_0 BETWEEN 101 AND 500 THEN 'less then 0500'
-		WHEN salary_1 - salary_0 BETWEEN 501 AND 1000 THEN 'less then 1000'
+		WHEN salary_1 - salary_0 BETWEEN 100.01 AND 500 THEN 'less then 0500'
+		WHEN salary_1 - salary_0 BETWEEN 500.01 AND 1000 THEN 'less then 1000'
 		WHEN salary_1 - salary_0 > 1000 THEN 'more then 1000'
 		ELSE NULL 
 	END AS decrease_salary
