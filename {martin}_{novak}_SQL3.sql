@@ -21,8 +21,4 @@ FROM t_year_0 t_0
 INNER JOIN t_year_1 t_1
 	ON year_0 = year_1 AND name_0 = name_1	
 GROUP BY name_1
-ORDER BY average_year_percentage_increase DESC; 
-
-
-	
-	
+ORDER BY average_year_percentage_increase DESC;
