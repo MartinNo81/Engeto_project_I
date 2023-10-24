@@ -10,4 +10,4 @@ FROM t_martin_novak_project_sql_primary_final tmnpspf
 WHERE 
 	`year`= 2018 AND industry = '_All_industry'
 	OR `year`= 2006 AND industry = '_All_industry'
-HAVING flag=1
+HAVING flag=1;
